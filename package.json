@@ -1,0 +1,28 @@
+{
+  "name": "imagine",
+  "private": true,
+  "scripts": {
+    "dev": "turbo dev",
+    "build": "turbo build",
+    "lint": "turbo lint",
+    "type-check": "turbo type-check",
+    "chrome": "open -a 'Google Chrome' --args --remote-debugging-port=9222 --user-data-dir=$HOME/.chrome-debug-imagine",
+    "dev:all": "concurrently --names \"next,chrome\" --prefix-colors \"cyan,yellow\" \"pnpm dev\" \"pnpm chrome\""
+  },
+  "devDependencies": {
+    "concurrently": "^10.0.3",
+    "turbo": "^2.5.4"
+  },
+  "packageManager": "pnpm@10.30.1",
+  "volta": {
+    "node": "24.16.0"
+  },
+  "optionalDependencies": {
+    "@tailwindcss/oxide-darwin-arm64": "4.3.0"
+  },
+  "pnpm": {
+    "overrides": {
+      "kysely": "0.28.17"
+    }
+  }
+}

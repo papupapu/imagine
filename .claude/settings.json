@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "Read(//Users/giancarlo.gerbaz/Library/Application Support/Claude/**)",
+      "Skill(update-config)",
+      "Skill(update-config:*)",
+      "Bash(zsh -l *)"
+    ]
+  }
+}
